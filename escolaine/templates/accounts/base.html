@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block 'title'%}{% endblock %}</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href=" {% static 'vendor/bootstrap/css/bootstrap.min.css' %} " rel="stylesheet">
+
+    <!--ESCOLAINE stylesheet -->
+    <link rel="stylesheet" href=" {% static 'assets/css/accounts/style.css' %} ">
+</head>
+<body>
+    <section class="section coming-soon" data-section="section3">
+        <div class="container">
+            <div class="row" style="display:flex; align-items:center; justify-content:center">
+                <div class="col-md-5">
+                    <div class="right-content">
+                        <div class="top-content">
+                            <h6>{% block 'label_title'%}{% endblock %}</h6>
+                        </div>
+                        <form id="contact" action="" method="get">
+                            <div class="row">
+                               {%block 'content_form'%}{% endblock %}
+                            </div>
+                        </form>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+</body>
+</html>

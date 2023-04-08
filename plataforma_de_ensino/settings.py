@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-2!7)srkzty^+1a+(0*hb8dfw^e=7bp38ovt9&j9f-83ldo@uc7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -37,7 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'escolaine.apps.EscolaineConfig'
+
+    #escolaine apps
+    'escolaine',
+    'accounts',
 ]
 
 MIDDLEWARE = [

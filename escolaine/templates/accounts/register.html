@@ -1,0 +1,49 @@
+{% extends 'accounts/base.html' %}
+
+{% block 'title'%} Escolaine Registra-se {% endblock %}
+
+{% block 'label_title'%}
+Crie a sua conta gratuita <em> e tenha um acesso imediato</em> para cursos online e
+    aulas
+    particulares
+{% endblock %}
+
+{% block 'content_form' %}
+    <div class="col-md-12">
+        <fieldset>
+            <input name="name" type="text" class="form-control" id="name"
+                placeholder="O seu nome" required="">
+        </fieldset>
+    </div>
+    <div class="col-md-12">
+        <fieldset>
+            <input name="email" type="email" class="form-control" id="email"
+                placeholder="O seu email" required="">
+        </fieldset>
+    </div>
+    <div class="col-md-12">
+        <fieldset>
+            <input name="password" type="password" class="form-control" id="password"
+                placeholder="palavra passe" required="">
+        </fieldset>
+    </div>
+    <div class="col-md-12">
+        <fieldset>
+            <input name="password-conf" type="password" class="form-control" id="password-conf"
+                placeholder="confirme palavra passe" required="">
+        </fieldset>
+    </div>
+   
+    <div class="col-md-12">
+        <fieldset>
+            <input name="phone-number" type="text" class="form-control" id="phone-number"
+                placeholder="O seu telefone (+258) " required="">
+        </fieldset>
+    </div>
+    <div class="col-md-12">
+        <fieldset>
+            <button type="submit" id="form-submit" class="button">Criar uma Conta</button>
+            <p class="p-conta">Já tens uma conta?<a href="{% url 'login'%}"> Faça o Login</a></p>
+        </fieldset>
+    </div>
+{% endblock %}

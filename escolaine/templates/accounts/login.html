@@ -1,0 +1,29 @@
+{% extends 'accounts/base.html' %}
+
+{% block 'title'%} Escolaine Registra-se {% endblock %}
+
+{% block 'label_title'%}
+Faca<em> Login</em> usando seus dados de cadastro!
+{% endblock %}
+
+{% block 'content_form' %}
+    <div class="col-md-12">
+        <fieldset>
+            <input name="name_or_email" type="text" class="form-control" id="name_or_email"
+                placeholder="O seu nome ou email" required="">
+        </fieldset>
+    </div>
+    
+    <div class="col-md-12">
+        <fieldset>
+            <input name="password" type="password" class="form-control" id="password"
+                placeholder="palavra passe" required="">
+        </fieldset>
+    </div>
+    <div class="col-md-12">
+        <fieldset>
+            <button type="submit" id="form-submit" class="button">Login</button>
+            <p class="p-conta">nao tens uma conta?<a href="{% url 'register'%}"> Criar Conta</a></p>
+        </fieldset>
+    </div>
+{% endblock %}
