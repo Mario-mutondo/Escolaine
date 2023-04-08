@@ -60,12 +60,51 @@ section.coming-soon form input {
     letter-spacing: 0.5px;
 }
 
+section.coming-soon form .container {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(250,250,250,0.1);
+    border-radius: 0px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 13px;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+    
+}
+
+section.coming-soon form .container label {
+    margin-bottom: 0px;
+}
+
+section.coming-soon form .container fieldset #birthday {
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    border-radius: 0px;
+    border: none;
+    outline: none;
+    color: #fff;
+    margin-bottom: 0px;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
 section.coming-soon form input:focus {
     outline: none;
     border: none;
     box-shadow: none;
     color: #fff;
     background-color: rgba(250,250,250,0.1);
+}
+
+section.coming-soon form .container fieldset input:focus {
+    background-color: none;
 }
 
 section.coming-soon form::placeholder { color: #fff }
